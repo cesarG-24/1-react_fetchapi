@@ -1,12 +1,12 @@
 # React App
 
-### practices and tasks, to improve my React skills.
+### Practices and tasks, to improve my React skills.
 
 #### 1- fetching API.
-    -hooks
-    -custom hooks
+    -Hooks
+    -Custom hooks
     -Router
-    -styled-components
+    -Styled-components
 
 
 ------
