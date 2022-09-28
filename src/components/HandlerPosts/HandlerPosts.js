@@ -25,9 +25,6 @@ const SearchStyled = styled.input`
 `
 const BtnStyled = styled.button`
   gap: 20px;
-  //border: 0.5px ;
-  //border-radius: 10px;
-  //box-shadow: 0 0 3px 1px grey ;
   margin: 10px;
 
   width: 130px;
@@ -41,9 +38,7 @@ const BtnStyled = styled.button`
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-
-  transition: all 0.3s ease;
-
+  
   :hover {
     box-shadow: -7px -7px 20px 0px #fff9,
       -4px -4px 5px 0px #fff9,
