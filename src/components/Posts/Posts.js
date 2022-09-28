@@ -3,12 +3,8 @@ import styled from "styled-components";
 const ContainerStyled = styled.div`
   display: flex;
   flex-direction: row;
-  //max-width: 1152px;
-  //width: 100%;
-  //border-radius: 4px;
   gap: 24px;
   padding: 20px;
-  //justify-content: center;
   align-items: baseline;
   border-bottom: 1px solid #E0E0E0;
   @media (max-width: 768px) {
