@@ -2,40 +2,34 @@ import {useEffect, useState} from "react";
 
 export const useApiPosts = () => {
     const [counter, setCounter] = useState(0);
-    // const [usersDta, setUsersDta] = useState([]);
-    // const [dataTwo, setDataTwo] = useState([]);
-    // const [dataThree, setDataThree] = useState([]);
     const [data, setData] = useState({
         users: [], posts: [], comments: [],});
 
-   useEffect(() =>{const getData1 = async () => {
+   useEffect(() =>{const getUserDta = async () => {
         const res = await fetch(`https://dummyjson.com/users?limit=16&skip=${counter * 16}`);
         const json = await res.json();
         const usersData = json.users;
-
-        // setUsersDta(usersData);
+        
         return usersData;
     }
-    const getData2 = async () => {
+    const getPostsDta = async () => {
         const res = await fetch(`https://dummyjson.com/posts?limit=16&skip=${counter * 16}`);
         const json = await res.json();
         const postsData = json.posts;
-
-        // setDataTwo(postsData);
+        
         return postsData;
     }
-    const getData3 = async () => {
+    const getCommentsDta = async () => {
         const res = await fetch(`https://dummyjson.com/comments?limit=16&skip=${counter * 16}`);
         const json = await res.json();
         const postsComments = json.comments;
-
-        // setDataThree(postsComments);
+        
         return postsComments;
     }
        (async () => {
-           const users = await getData1();
-           const posts = await getData2();
-           const comments = await getData3();
+           const users = await getUserDta();
+           const posts = await getPostsDta();
+           const comments = await getCommentsDta();
 
            setData({
                users, posts, comments,
