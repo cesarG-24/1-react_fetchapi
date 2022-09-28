@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {useState} from "react";
-import {useApiPosts} from "../../api";
+import {useApiPosts} from "../../hooks";
 
 import {Posts} from '../Posts';
 
